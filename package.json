@@ -16,7 +16,8 @@
     "react-native": ">=0.50.3"
   },
   "dependencies": {
-    "react": "16.0.0",
-    "react-native": "0.50.3"
+    "@react-native-community/cli-platform-ios": "^3.0.0",
+    "react": "16.9.0",
+    "react-native": "0.61.4"
   }
 }

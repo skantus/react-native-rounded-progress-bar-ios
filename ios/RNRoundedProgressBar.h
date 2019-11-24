@@ -1,11 +1,14 @@
+//
+//  RNRoundedProgressBar.h
+//
+//  Created by Alejo Castaño on 23/11/2019.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
 
-#if __has_include("RCTBridgeModule.h")
-#import "RCTBridgeModule.h"
-#else
-#import <React/RCTBridgeModule.h>
-#endif
+#import "React/RCTViewManager.h"
 
-@interface RNRoundedProgressBar : NSObject <RCTBridgeModule>
+@interface RNRoundedProgressBar : RCTViewManager
+
+@property (nonatomic, assign) NSDictionary *props;
 
 @end
-  
