@@ -1,16 +1,19 @@
 {
   "name": "react-native-rounded-progress-bar",
   "version": "1.0.0",
-  "description": "",
+  "description": "Animated round progress bar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "rounded",
+    "progress bar",
+    "react-native",
+    "animated"
   ],
-  "author": "",
-  "license": "",
+  "author": "Alejo Castaño - Domestika",
+  "license": "MIT",
   "peerDependencies": {
     "react": "*",
     "react-native": ">=0.50.3"
