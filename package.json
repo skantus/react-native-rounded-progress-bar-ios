@@ -1,5 +1,5 @@
 {
-  "name": "react-native-rounded-progress-bar",
+  "name": "react-native-rounded-progress-bar-ios",
   "version": "1.0.0",
   "description": "Animated round progress bar",
   "main": "index.js",
@@ -22,5 +22,14 @@
     "@react-native-community/cli-platform-ios": "^3.0.0",
     "react": "16.9.0",
     "react-native": "0.61.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skantus/react-native-rounded-progress-bar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skantus/react-native-rounded-progress-bar/issues"
+  },
+  "homepage": "https://github.com/skantus/react-native-rounded-progress-bar#readme"
 }
