@@ -8,7 +8,7 @@
 #import "React/RCTViewManager.h"
 #import "RNRoundedProgressBar.h"
 
-@interface RCT_EXTERN_REMAP_MODULE(RNSwiftView, RNRoundedProgressBarManager, RCTViewManager)
+@interface RCT_EXTERN_REMAP_MODULE(RoundedProgressBar, RNRoundedProgressBarManager, RCTViewManager)
 
 RCT_EXPORT_VIEW_PROPERTY(props, NSDictionary);
 
