@@ -6,8 +6,6 @@ const RNRoundedProgressBar = requireNativeComponent("RNSwiftView");
 const RoundedProgressBar = props => {
   const { percent, borderWidth, color } = props;
 
-  console.log("TCL: RNRoundedProgressBar: 1.0.2 ", RNRoundedProgressBar);
-
   const options = {
     percent: percent || 1,
     borderWidth: borderWidth || 4,
