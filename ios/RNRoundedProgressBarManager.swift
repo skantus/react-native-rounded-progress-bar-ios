@@ -12,7 +12,7 @@ import Foundation
 class RNRoundedProgressBarManager : RCTViewManager {
   
   override func view() -> UIView! {
-    return RoundedProgressBar();
+    return RoundedProgressBarView();
   }
   
   override static func requiresMainQueueSetup() -> Bool {

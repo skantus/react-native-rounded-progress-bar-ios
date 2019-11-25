@@ -164,8 +164,8 @@
 			children = (
 				A12A944B238B487400AFFB5E /* RoundedProgressBar.swift */,
 				A12A9449238B47D000AFFB5E /* RNRoundedProgressBarManager.swift */,
-				B3E7B5881CC2AC0600A0062D /* RNRoundedProgressBar.h */,
 				B3E7B5891CC2AC0600A0062D /* RNRoundedProgressBar.m */,
+				B3E7B5881CC2AC0600A0062D /* RNRoundedProgressBar.h */,
 				A12A9448238B47D000AFFB5E /* RNRoundedProgressBar-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				A12A9407238B3E7200AFFB5E /* Frameworks */,

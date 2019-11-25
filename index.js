@@ -1,10 +1,12 @@
 import React from "react";
 import { View, requireNativeComponent } from "react-native";
 
-const RNRoundedProgressBar = requireNativeComponent("RoundedProgressBar");
+const RNRoundedProgressBar = requireNativeComponent("RNSwiftView");
 
 const RoundedProgressBar = props => {
   const { percent, borderWidth, color } = props;
+
+  console.log("TCL: RNRoundedProgressBar: 1.0.2 ", RNRoundedProgressBar);
 
   const options = {
     percent: percent || 1,
