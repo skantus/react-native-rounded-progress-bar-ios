@@ -1,6 +1,6 @@
 {
   "name": "react-native-rounded-progress-bar-ios",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Animated round progress bar",
   "main": "index.js",
   "scripts": {
@@ -15,15 +15,13 @@
   "author": "Alejo Castaño - Domestika",
   "license": "MIT",
   "peerDependencies": {
-    "react": "*",
-    "react-native": ">=0.50.3"
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
   },
-  "dependencies": {
-    "@react-native-community/cli-platform-ios": "^3.0.0",
-    "react": "16.9.0",
-    "react-native": "0.61.4"
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skantus/react-native-rounded-progress-bar-ios.git"
