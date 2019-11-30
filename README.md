@@ -1,6 +1,6 @@
 # react-native-rounded-progress-bar-ios
 
-## Getting started
+## Installation
 
 `$ yarn add react-native-rounded-progress-bar-ios`
 
