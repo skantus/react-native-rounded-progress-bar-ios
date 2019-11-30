@@ -1,7 +1,7 @@
 import React from "react";
 import { View, requireNativeComponent } from "react-native";
 
-const RNRoundedProgressBar = requireNativeComponent("RoundedProgressBar");
+const RoundedProgressBarIOS = requireNativeComponent("RoundedProgressBarIOS");
 
 const RoundedProgressBar = props => {
   const { percent, borderWidth, color } = props;
@@ -29,7 +29,7 @@ const RoundedProgressBar = props => {
           left: 0
         }}
       >
-        <RNRoundedProgressBar props={options} />
+        <RoundedProgressBarIOS props={options} />
       </View>
       {props.children}
     </View>
