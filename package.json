@@ -1,7 +1,7 @@
 {
   "name": "react-native-rounded-progress-bar-ios",
   "title": "React Native Rounded Progress Bar IOS",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Animated round progress bar",
   "main": "index.js",
   "scripts": {
@@ -37,5 +37,8 @@
   "devDependencies": {
     "react": "^16.8.3",
     "react-native": "^0.59.10"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
