@@ -16,5 +16,10 @@ import RoundedProgressBar from 'react-native-rounded-progress-bar-ios';
 	<Text>Loading...</Text>
 </RoundedProgressBar>
 ```
+
+## Note:
+
+Only available for iOS.
+
 ## Happy coding!
 <img src="https://media.giphy.com/media/fm5JqspHFgIXm/giphy.gif" width="300" />
