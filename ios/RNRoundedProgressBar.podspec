@@ -6,12 +6,12 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNRoundedProgressBar
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/skantus/react-native-rounded-progress-bar-ios"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNRoundedProgressBar.git", :tag => "master" }
+  s.platform     = :ios, "9.0"
+  s.source       = { :git => "https://github.com/skantus/react-native-rounded-progress-bar-ios.git", :tag => "master" }
   s.source_files  = "RNRoundedProgressBar/**/*.{h,m}"
   s.requires_arc = true
 
@@ -20,5 +20,3 @@ Pod::Spec.new do |s|
   #s.dependency "others"
 
 end
-
-  
