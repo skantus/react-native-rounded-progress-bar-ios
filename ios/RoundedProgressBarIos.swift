@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RoundedProgressBarView: UIView {
+class RoundedProgressBarIos: UIView {
   var circle = UIView(frame: CGRect(x: 0,y: 0, width: 100, height: 100))
   var progressCircle = CAShapeLayer()
   
