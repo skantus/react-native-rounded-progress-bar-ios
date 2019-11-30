@@ -6,7 +6,9 @@
 
 ## Installation
 
-`$ yarn add react-native-rounded-progress-bar-ios`
+- `$ yarn add react-native-rounded-progress-bar-ios`
+- `cd ios/ && pod install`
+
 
 ## Usage
 ```javascript
