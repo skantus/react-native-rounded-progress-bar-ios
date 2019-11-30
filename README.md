@@ -2,16 +2,19 @@
 
 ## Getting started
 
-`$ npm install react-native-rounded-progress-bar-ios --save`
-
-### Mostly automatic installation
-
-`$ react-native link react-native-rounded-progress-bar-ios`
+`$ yarn add react-native-rounded-progress-bar-ios`
 
 ## Usage
 ```javascript
-import RoundedProgressBarIos from 'react-native-rounded-progress-bar-ios';
+import RoundedProgressBar from 'react-native-rounded-progress-bar-ios';
 
-// TODO: What to do with the module?
-RoundedProgressBarIos;
+<RoundedProgressBar	
+	percent={99.9}	
+	borderWidth={4}	
+	size={40}	
+	color="#F02D00">	
+	<Text>Loading...</Text>
+</RoundedProgressBar>
 ```
+## Happy coding!
+<img src="https://media.giphy.com/media/fm5JqspHFgIXm/giphy.gif" width="300" />
