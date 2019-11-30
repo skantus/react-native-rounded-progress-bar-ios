@@ -1,19 +1,35 @@
 {
   "name": "react-native-rounded-progress-bar-ios",
-  "version": "1.0.8",
+  "title": "React Native Rounded Progress Bar IOS",
+  "version": "1.0.10",
   "description": "Animated round progress bar",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "react-native",
     "rounded",
     "progress bar",
     "react-native",
     "animated"
   ],
-  "author": "Alejo Castaño - Domestika",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skantus/react-native-rounded-progress-bar-ios.git",
+    "baseUrl": "https://github.com/skantus/react-native-rounded-progress-bar-ios"
+  },
+  "bugs": {
+    "url": "https://github.com/skantus/react-native-rounded-progress-bar-ios/issues"
+  },
+  "homepage": "https://github.com/skantus/react-native-rounded-progress-bar-ios#readme",
+  "author": {
+    "name": "Alejo Castaño",
+    "email": "alejandro.castano@domestika.org"
+  },
   "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
   "peerDependencies": {
     "react": "^16.8.1",
     "react-native": ">=0.59.0-rc.0 <1.0.x"
@@ -21,13 +37,5 @@
   "devDependencies": {
     "react": "^16.8.3",
     "react-native": "^0.59.10"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skantus/react-native-rounded-progress-bar-ios.git"
-  },
-  "bugs": {
-    "url": "https://github.com/skantus/react-native-rounded-progress-bar-ios/issues"
-  },
-  "homepage": "https://github.com/skantus/react-native-rounded-progress-bar-ios#readme"
+  }
 }

@@ -1,8 +1,8 @@
 //
-//  RNRoundedProgressBarManager.swift
-//  RNRoundedProgressBar
+//  RNProgressRoundedBarManager.swift
+//  RoundedProgressBarIos
 //
-//  Created by Alejo Castaño on 25/11/2019.
+//  Created by Alejo Castaño on 30/11/2019.
 //  Copyright © 2019 Facebook. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import Foundation
 class RNRoundedProgressBarManager : RCTViewManager {
   
   override func view() -> UIView! {
-    return RoundedProgressBarView();
+    return RoundedProgressBarIos();
   }
   
   override static func requiresMainQueueSetup() -> Bool {
