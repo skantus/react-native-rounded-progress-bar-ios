@@ -1,7 +1,7 @@
 {
   "name": "react-native-rounded-progress-bar-ios",
   "title": "React Native Rounded Progress Bar IOS",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Animated round progress bar",
   "main": "index.js",
   "scripts": {
