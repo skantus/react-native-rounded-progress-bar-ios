@@ -11,41 +11,60 @@ import UIKit
 
 class RoundedProgressBarIos: UIView {
   var circle = UIView(frame: CGRect(x: 0,y: 0, width: 100, height: 100))
+  var circleShadow = UIView(frame: CGRect(x: 0,y: 0, width: 100, height: 100))
+  
   var progressCircle = CAShapeLayer()
+  var progressCircleShadow = CAShapeLayer()
   
   @objc(setProps:)
   func setProps(props: NSDictionary) {
     
     // Size
     let size = props["size"] as! CGFloat;
-    let circlePath = UIBezierPath(arcCenter: CGPoint (x: circle.bounds.width / 2, y: circle.bounds.width / 2), radius: size, startAngle: CGFloat(-0.5 * Double.pi), endAngle: CGFloat(1.5 * Double.pi), clockwise: true    )
+    let circlePath = UIBezierPath(arcCenter: CGPoint (x: circle.bounds.width / 2, y: circle.bounds.width / 2), radius: size, startAngle: CGFloat(-0.5 * Double.pi), endAngle: CGFloat(1.5 * Double.pi), clockwise: true)
     
     // Default props
     circle.layoutIfNeeded()
+    circleShadow.layoutIfNeeded()
+    
     progressCircle.path = circlePath.cgPath
+    progressCircleShadow.path = circlePath.cgPath
+    
     progressCircle.strokeStart = 0
+    progressCircleShadow.strokeStart = 0
     
-    // Border width
+    // border width
     progressCircle.lineWidth = props["borderWidth"] as! CGFloat
+    // border width shadow
+    progressCircleShadow.lineWidth = props["backgroundWidth"] as! CGFloat
     
-    // Line color
-    let lineColor = props["color"]
-    let customLineColor = UIColor(hexString: lineColor as! String).cgColor
+    // line color
+    let customLineColor = UIColor(hexString: props["color"] as! String).cgColor
     progressCircle.strokeColor = customLineColor
     
-    // Background color
+    // line color shadow
+    let customLineColorShadow = UIColor(hexString: props["shadowColor"] as! String).cgColor
+    progressCircleShadow.strokeColor = customLineColorShadow
+    
+    // percent
+    progressCircle.strokeEnd = props["percent"] as! CGFloat
+    // percent shadow
+    progressCircleShadow.strokeEnd = 1
+    
+    // background color
     let bgColor = props["bgColor"]
     let customBgColor = UIColor(hexString: bgColor as! String).cgColor
     progressCircle.fillColor = customBgColor
-    
-    // Percent
-    progressCircle.strokeEnd = props["percent"] as! CGFloat
+    // background color shadow
+    progressCircleShadow.fillColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     
     circle.layer.addSublayer(progressCircle)
+    circleShadow.layer.addSublayer(progressCircleShadow)
   }
   
   override init(frame: CGRect) {
     super.init(frame: frame)
+    self.addSubview(circleShadow)
     self.addSubview(circle)
   }
   

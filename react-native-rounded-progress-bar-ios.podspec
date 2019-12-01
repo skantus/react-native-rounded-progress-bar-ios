@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "https://github.com/github_account/react-native-rounded-progress-bar-ios"
   s.license      = "MIT"
-  # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "Your Name" => "yourname@email.com" }
+  s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.authors      = { "Alejo Castaño" => "drskantus@hotmail.com" }
   s.platforms    = { :ios => "9.0" }
   s.source       = { :git => "https://github.com/github_account/react-native-rounded-progress-bar-ios.git", :tag => "#{s.version}" }
 

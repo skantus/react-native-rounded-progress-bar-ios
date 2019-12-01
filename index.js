@@ -4,14 +4,23 @@ import { View, requireNativeComponent } from "react-native";
 const RoundedProgressBarIOS = requireNativeComponent("RoundedProgressBarIOS");
 
 const RoundedProgressBar = props => {
-  const { percent, borderWidth, color, bgColor } = props;
+  const {
+    percent,
+    borderWidth,
+    color,
+    bgColor,
+    backgroundWidth,
+    shadowColor
+  } = props;
 
   const options = {
     percent: percent || 1,
     borderWidth: borderWidth || 4,
     size: props.size || 50,
     color: color || "#c2c2c2",
-    bgColor: bgColor || "#fff"
+    bgColor: bgColor || "#fff",
+    backgroundWidth: backgroundWidth || 4,
+    shadowColor: shadowColor || "#9e9e9e"
   };
 
   return (
