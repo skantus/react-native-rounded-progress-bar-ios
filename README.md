@@ -1,9 +1,12 @@
 # react-native-rounded-progress-bar-ios
 
+
 <p align="center">	
-  <img src="https://github.com/skantus/react-native-rounded-progress-bar/blob/master/screenshots/downloading.gif" width="300" />	
-  <img src="https://github.com/skantus/react-native-rounded-progress-bar/blob/master/screenshots/1.gif" width="300" />	
+  <img src="https://user-images.githubusercontent.com/4986411/69918905-741ddf80-1477-11ea-8c30-8afe621c9364.png" width="100" />	
+  <img src="https://user-images.githubusercontent.com/4986411/69918906-741ddf80-1477-11ea-957b-91b654577f59.png" width="100" />	
+  <img src="https://user-images.githubusercontent.com/4986411/69918907-74b67600-1477-11ea-89d7-63cd41662c48.gif" width=300 />
 </p>
+
 
 ## Installation
 
