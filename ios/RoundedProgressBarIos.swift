@@ -23,18 +23,22 @@ class RoundedProgressBarIos: UIView {
     // Default props
     circle.layoutIfNeeded()
     progressCircle.path = circlePath.cgPath
-    progressCircle.fillColor = UIColor.clear.cgColor
     progressCircle.strokeStart = 0
     
-    // borderWidth
+    // Border width
     progressCircle.lineWidth = props["borderWidth"] as! CGFloat
     
-    // color
-    let color = props["color"]
-    let customGrey = UIColor(hexString: color as! String).cgColor
-    progressCircle.strokeColor = customGrey
+    // Line color
+    let lineColor = props["color"]
+    let customLineColor = UIColor(hexString: lineColor as! String).cgColor
+    progressCircle.strokeColor = customLineColor
     
-    // percent
+    // Background color
+    let bgColor = props["bgColor"]
+    let customBgColor = UIColor(hexString: bgColor as! String).cgColor
+    progressCircle.fillColor = customBgColor
+    
+    // Percent
     progressCircle.strokeEnd = props["percent"] as! CGFloat
     
     circle.layer.addSublayer(progressCircle)

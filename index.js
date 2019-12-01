@@ -10,7 +10,8 @@ const RoundedProgressBar = props => {
     percent: percent || 1,
     borderWidth: borderWidth || 4,
     size: props.size || 50,
-    color: color || "#c2c2c2"
+    color: color || "#c2c2c2",
+    bgColor: bgColor || "#fff"
   };
 
   return (
