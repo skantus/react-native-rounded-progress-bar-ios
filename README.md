@@ -1,6 +1,7 @@
 # react-native-rounded-progress-bar-ios
 
 <p align="center">	
+  <img src="https://github.com/skantus/react-native-rounded-progress-bar/blob/master/screenshots/downloading.gif" width="300" />	
   <img src="https://github.com/skantus/react-native-rounded-progress-bar/blob/master/screenshots/1.gif" width="300" />	
 </p>
 
