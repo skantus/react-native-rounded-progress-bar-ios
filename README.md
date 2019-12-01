@@ -19,11 +19,13 @@
 import RoundedProgressBar from "react-native-rounded-progress-bar-ios";
 
 <RoundedProgressBar
-  percent={99.9}
-  borderWidth={4}
+  percent={0.75}
+  borderWidth={6}
   size={40}
   color="#F02D00"
-  bgColor="#DF8BD1"
+  bgColor="#fff"
+  backgroundWidth={9}
+  shadowColor="#c2c2c2"
 >
   <Text>Loading...</Text>
 </RoundedProgressBar>;
