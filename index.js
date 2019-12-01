@@ -4,7 +4,7 @@ import { View, requireNativeComponent } from "react-native";
 const RoundedProgressBarIOS = requireNativeComponent("RoundedProgressBarIOS");
 
 const RoundedProgressBar = props => {
-  const { percent, borderWidth, color } = props;
+  const { percent, borderWidth, color, bgColor } = props;
 
   const options = {
     percent: percent || 1,
