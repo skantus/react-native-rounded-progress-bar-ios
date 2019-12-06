@@ -26,21 +26,20 @@ const RoundedProgressBar = props => {
   return (
     <View
       style={{
-        width: 100,
-        height: 100,
+        width: props.size,
+        height: props.size,
         justifyContent: "center",
         alignItems: "center"
       }}
     >
-      <View
+      <RoundedProgressBarIOS
+        props={options}
         style={{
           position: "absolute",
           top: 0,
           left: 0
         }}
-      >
-        <RoundedProgressBarIOS props={options} />
-      </View>
+      />
       {props.children}
     </View>
   );

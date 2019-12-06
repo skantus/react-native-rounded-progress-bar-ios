@@ -5,27 +5,25 @@
 //  Created by Alejo Castaño on 25/11/2019.
 //  Copyright © 2019 Facebook. All rights reserved.
 //
-
-import Foundation
 import UIKit
 
 class RoundedProgressBarIos: UIView {
-  var circle = UIView(frame: CGRect(x: 0,y: 0, width: 100, height: 100))
-  var circleShadow = UIView(frame: CGRect(x: 0,y: 0, width: 100, height: 100))
-  
+  var circle = UIView()
+  var circleShadow = UIView()
   var progressCircle = CAShapeLayer()
   var progressCircleShadow = CAShapeLayer()
   
   @objc(setProps:)
   func setProps(props: NSDictionary) {
     
-    // Size
     let size = props["size"] as! CGFloat;
-    let circlePath = UIBezierPath(arcCenter: CGPoint (x: circle.bounds.width / 2, y: circle.bounds.width / 2), radius: size, startAngle: CGFloat(-0.5 * Double.pi), endAngle: CGFloat(1.5 * Double.pi), clockwise: true)
     
-    // Default props
+    circle.frame = CGRect(x: 0,y: 0, width: size, height: size);
+    circleShadow.frame = CGRect(x: 0,y: 0, width: size, height: size);
     circle.layoutIfNeeded()
     circleShadow.layoutIfNeeded()
+    
+    let circlePath = UIBezierPath(arcCenter: CGPoint (x: circle.bounds.width / 2, y: circle.bounds.width / 2), radius: size, startAngle: CGFloat(-0.5 * Double.pi), endAngle: CGFloat(1.5 * Double.pi), clockwise: true)
     
     progressCircle.path = circlePath.cgPath
     progressCircleShadow.path = circlePath.cgPath
@@ -33,30 +31,21 @@ class RoundedProgressBarIos: UIView {
     progressCircle.strokeStart = 0
     progressCircleShadow.strokeStart = 0
     
-    // border width
     progressCircle.lineWidth = props["borderWidth"] as! CGFloat
-    // border width shadow
     progressCircleShadow.lineWidth = props["backgroundWidth"] as! CGFloat
-    
-    // line color
+
     let customLineColor = UIColor(hexString: props["color"] as! String).cgColor
     progressCircle.strokeColor = customLineColor
     
-    // line color shadow
     let customLineColorShadow = UIColor(hexString: props["shadowColor"] as! String).cgColor
     progressCircleShadow.strokeColor = customLineColorShadow
     
-    // percent
     progressCircle.strokeEnd = props["percent"] as! CGFloat
-    // percent shadow
     progressCircleShadow.strokeEnd = 1
     
-    // background color
     let bgColor = props["bgColor"]
     let customBgColor = UIColor(hexString: bgColor as! String).cgColor
     progressCircle.fillColor = customBgColor
-    // background color shadow
-    progressCircleShadow.fillColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
     
     circle.layer.addSublayer(progressCircle)
     circleShadow.layer.addSublayer(progressCircleShadow)
