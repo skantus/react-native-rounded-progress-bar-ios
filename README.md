@@ -1,3 +1,7 @@
+## Deprecated
+
+-  You should use https://github.com/sasij/react-native-rounded-progress-bar supports both platforms :)
+
 # react-native-rounded-progress-bar-ios
 
 
