@@ -1,4 +1,4 @@
-## Deprecated
+## Note
 
 -  You could use https://github.com/sasij/react-native-rounded-progress-bar supports both platforms :)
 
